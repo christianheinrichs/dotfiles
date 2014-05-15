@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ~/Desktop/Hacking
+ls
+cowsay "Let's get to programming"

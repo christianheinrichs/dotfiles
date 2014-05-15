@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ~/Desktop/Hacking/Projects
+ls
+cowsay "Let's be productive"

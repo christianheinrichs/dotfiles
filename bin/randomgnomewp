@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# While this script can be used anytime, it is best put to use in combination with a crontab.
+# On Ubuntu for example you would enter crontab -e in a terminal and get something like this:
+#
+# Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').#
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+
+# To change the wallpaper every 5 minutes if the script is located in the $HOME directory, this would suffice:
+# */5 * * * *  export DISPLAY=:0 && bash $HOME/randomgnomewp.sh > /tmp/cronerrors.log 2>&1
+
+# If you configured your crontab, press Ctrl+X and then Y to confirm the changes.
+# You should now have a new crontab installed.
+# What now happens is, that the wallpaper changes every 5 minutes, should everything be properly configured in the crontab.
+# If you don't see it change, there might be something wrong, so read the log the crontab creates: /tmp/cronerrors.log
+
+# randomgnomewp.sh written by Christian Heinrichs <christian.heinrichs@openmailbox.org> - 05/15/2014
+
+bgimgs=($(ls $HOME/Desktop/Wallpapers/ | shuf))
+
+gsettings set org.gnome.desktop.background picture-uri file:///$HOME/Desktop/Wallpapers/${bgimgs}
