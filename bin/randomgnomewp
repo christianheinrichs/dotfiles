@@ -34,8 +34,8 @@
 # What now happens is, that the wallpaper changes every 5 minutes, should everything be properly configured in the crontab.
 # If you don't see it change, there might be something wrong, so read the log the crontab creates: /tmp/cronerrors.log
 
-# randomgnomewp.sh written by Christian Heinrichs <christian.heinrichs@openmailbox.org> - 05/15/2014
+# randomgnomewp.sh written by Christian Heinrichs <christian.heinrichs@openmailbox.org> - 05/27/2014
 
-bgimgs=($(ls $HOME/Desktop/Wallpapers/ | shuf))
+bgimgs=($(ls $HOME/Pictures/Wallpapers/ | shuf))
 
-gsettings set org.gnome.desktop.background picture-uri file:///$HOME/Desktop/Wallpapers/${bgimgs}
+gsettings set org.gnome.desktop.background picture-uri file:///$HOME/Pictures/Wallpapers/${bgimgs}

@@ -1,17 +1,17 @@
 #!/bin/bash
 
 # Update the apt cache, upgrade system and clean up past installations
-printf "Updating apt cache\n"
+printf '\E[31m'"\033[1mUpdating apt cache\n\033[0m"
 sudo apt-get update
-printf "Executing distribution upgrade command\n"
+printf '\E[31m'"\033[1mExecuting distribution upgrade command\n\033[0m"
 sudo apt-get dist-upgrade
-printf "Executing upgrade command\n"
+printf '\E[31m'"\033[1mExecuting upgrade command\n\033[0m"
 sudo apt-get upgrade
-printf "Executing autoremove command\n"
+printf '\E[31m'"\033[1mExecuting autoremove command\n\033[0m"
 sudo apt-get autoremove
-printf "Executing autoclean command\n"
+printf '\E[31m'"\033[1mExecuting autoclean command\n\033[0m"
 sudo apt-get autoclean
-printf "Executing clean command\n"
+printf '\E[31m'"\033[1mExecuting clean command\n\033[0m"
 sudo apt-get clean
-printf "The system should now be up to date and cleaned up!\n"
+printf '\E[92m'"\033[1mThe system should now be up to date and cleaned up!\n\033[0m"
 exit 0
