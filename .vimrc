@@ -2,7 +2,14 @@
 filetype indent on
 set autoindent
 
-" Turn on line numbering. Turn it off with "set nonu" 
+" Set tab width to 4
+set tabstop=4
+set shiftwidth=4
+
+" Use spaces instead of tabs
+set expandtab
+
+" Turn on line numbering. Turn it off with "set nonu"
 set number
 
 " Set syntax on
@@ -11,7 +18,7 @@ syntax on
 " Case insensitive search
 set ic
 
-" Higlhight search
+" Highlight search
 set hls
 
 " Wrap text instead of being on one line
