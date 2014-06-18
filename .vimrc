@@ -24,5 +24,9 @@ set hls
 " Wrap text instead of being on one line
 set lbr
 
-" Change colorscheme from default to delek
-colorscheme delek
+" Change colorscheme to elflord
+colorscheme elflord
+
+" Set colorcolumn to Python standard of 79
+set colorcolumn=79
+hi ColorColumn ctermbg=lightblue
