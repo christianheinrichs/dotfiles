@@ -1,4 +1,4 @@
-# Source files located in ~/bin, so they work without writing bash or sh first
+# Source files located in ~/bin, so the cd command actually works
 alias gitstuff='source gitstuff'
 alias hack='source hack'
 alias projects='source projects'

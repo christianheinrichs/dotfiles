@@ -12,6 +12,9 @@ set expandtab
 " Turn on line numbering. Turn it off with "set nonu"
 set number
 
+" Enable backups
+set backup
+
 " Set syntax on
 syntax on
 
