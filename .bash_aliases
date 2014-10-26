@@ -1,7 +1,16 @@
+# Always use the color option, when utilizing grep
+alias grep='grep --color'
+
 # Source files located in ~/bin, so the cd command actually works
 alias gitstuff='source gitstuff'
 alias hack='source hack'
 alias projects='source projects'
+
+# Use git --color switch to make output more readable
+alias gitbranch='git branch --color'
+alias gitdiff='git diff --color'
+alias gitlog='git log --color'
+alias gitreflog='git reflog --color'
 
 # Continuous netstat command
 alias contns='sudo netstat -acenp | grep -v "DGRAM\|SEQPACKET\|STREAM"'
@@ -9,7 +18,3 @@ alias contns='sudo netstat -acenp | grep -v "DGRAM\|SEQPACKET\|STREAM"'
 alias logns='sudo netstat -aenp > ~/Desktop/ns.log'
 # Read the netstat output from the log which was just created
 alias showns='less ~/Desktop/ns.log'
-
-# This workaround is for the apt-get version of Ubuntu 12.04,
-# where Geany doesn't react to menu items, when logged into a Unity session. 
-alias startgeany='env UBUNTU_MENUPROXY=0 geany'

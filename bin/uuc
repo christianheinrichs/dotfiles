@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Update the apt cache, upgrade system and clean up past installations
+# [U]pdate the apt cache, [u]pgrade system and [c]lean up past installations
 printf '\E[31m'"\033[1mUpdating apt cache\n\033[0m"
 sudo apt-get update
 printf '\E[31m'"\033[1mExecuting distribution upgrade command\n\033[0m"

@@ -8,6 +8,8 @@
 # Work on master-dev branch, commit all changes and then change to master.
 # Checkout the files from master-dev and run this script
 
+printf "Changing local links to remote links.\n"
+
 # sed replacement for the English version
 sed -i -e \
 's/href="stylesheet.css"/href="http:\/\/christianheinrichs.github.io\/stylesheet.css"/g' -e \
@@ -44,7 +46,7 @@ sed -i -e \
 's/a href="projekte.html"/a href="http:\/\/christianheinrichs.github.io\/de\/projekte.html"/g' -e \
 's/a href="accounts.html"/a href="http:\/\/christianheinrichs.github.io\/de\/accounts.html"/g' -e \
 's/a href="kontakt.html"/a href="http:\/\/christianheinrichs.github.io\/de\/kontakt.html"/g' -e \
-'s/a href="about.html"/a href="http:\/\/christianheinrichs.github.io\/de\/about.html"/g' \
+'s/a href="ueber.html"/a href="http:\/\/christianheinrichs.github.io\/de\/ueber.html"/g' \
 $(ls -d ~/Desktop/gitstuff/christianheinrichs.github.io/de/* | grep .html)
 
 # sed replacement for the German articles
@@ -57,5 +59,7 @@ sed -i -e \
 's/a href="..\/projekte.html"/a href="http:\/\/christianheinrichs.github.io\/de\/projekte.html"/g' -e \
 's/a href="..\/accounts.html"/a href="http:\/\/christianheinrichs.github.io\/de\/accounts.html"/g' -e \
 's/a href="..\/kontakt.html"/a href="http:\/\/christianheinrichs.github.io\/de\/kontakt.html"/g' -e \
-'s/a href="..\/about.html"/a href="http:\/\/christianheinrichs.github.io\/de\/about.html"/g' \
+'s/a href="..\/ueber.html"/a href="http:\/\/christianheinrichs.github.io\/de\/ueber.html"/g' \
 $(ls -d ~/Desktop/gitstuff/christianheinrichs.github.io/de/artikel/* | grep .html)
+
+printf "Done.\n"
