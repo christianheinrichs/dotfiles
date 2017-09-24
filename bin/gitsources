@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ~/gitprojects/sources/
+cowsay "Let's work with our own Git projects."
+ls

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd ~/gitprojects/forks/
+cowsay "Let's work with forked Git repositories."
+ls

@@ -1,5 +1,0 @@
-#!/bin/bash
-
-cd ~/Desktop/gitstuff
-ls
-cowsay "Let's work with git repositories"
