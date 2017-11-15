@@ -1,4 +1,4 @@
 dotfiles
 ========
 
-These are my dotfiles I currently use on Debian Squeeze.
+These are my dotfiles I currently use on Debian Stretch.
