@@ -1,0 +1,71 @@
+Version 15.5.2014-r1
+- Initial commit
+
+Version 15.5.2014-r2
+- Correct git email address and README
+
+Version 15.5.2014-r3
+- Add GPL v3 license
+
+Version 28.5.2014
+- Change wallpaper folder path
+- Add colors to updateall script
+- Add .nanorc file
+- Add .vimrc file
+
+Version 29.5.2014
+- Use spaces instead of tabs in Vim
+- Set Vim tab width to 4
+- Correct typo in .vimrc
+- Update Ubuntu version
+- Slightly modify TODO file
+- Minimal changes to .zshrc
+
+Version 18.6.2014
+- Clean up .nanorc
+- Change Vim colorscheme to elflord
+- Let Vim display a vertical bar to keep code compact
+
+Version 1.7.2014
+- Add replacelinks script
+- Enable Vim backups
+- Remove credits from randomgnomewp script
+- Correct description in .bash_aliases
+
+Version 26.10.2014
+- Add .gitignore file
+- Add git aliases
+- Update README
+- Rename updateall to uuc
+
+Version 24.9.2017
+- Delete gitstuff script and replace it with gitforks and gitsources
+- Remove Git aliases
+- Update README.md
+
+Version 21.10.2017
+- Update .vimrc
+- Update .gitconfig
+- Add comment to .gitignore
+- Delete .zshrc
+
+Version 9.11.2017
+- Update .vimrc
+
+Version 15.11.2017
+- Fix typo in README.md
+
+Version 12.4.2019-r1
+- Remove netstat aliases
+- Delete .bash_logout
+- Update .gitignore
+- Delete .profile
+
+Version 12.4.2019-r2
+- Update email address in .gitconfig
+
+Version 19.1.2022
+- Add changelog
+- Add README plaintext file
+- Update .nanorc
+- Update README.md
