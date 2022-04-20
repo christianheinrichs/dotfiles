@@ -69,3 +69,10 @@ Version 19.1.2022
 - Add README plaintext file
 - Update .nanorc
 - Update README.md
+
+Version 20.4.2022
+- Add YAML autocmd command to .vimrc
+- Fall back to eight colors in .vimrc
+- Set Vim colorscheme to default
+- Add licensing notice
+- Update README
